@@ -1,0 +1,123 @@
+@import './variables.scss';
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+
+.main-container {
+  max-width: 500rem
+}
+
+.learn-container {
+  .learn-nav {
+    button {
+      display: inline-block;
+      margin: 1rem;
+    }
+  }
+  .add-content {
+    width: 100%;
+  }
+  .learn-sidebar {
+    width: 30%;
+    display: inline-block;
+  }
+  .learn-main-view {
+    width: 70%;
+    display: inline-block;
+  }
+}
+
+.left-container {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  .post-job-form {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    input {
+      padding: 15px;
+      width: 90%;
+      margin: 5px auto;
+      text-align: center;
+    }
+    textarea {
+      padding: 15px;
+      width: 90%;
+      text-align: center;
+      margin: 5px auto;
+    }
+  }
+  .profile-info-container {
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: $offWhite;
+    text-align: center;
+    margin-top: -120px;
+    margin-left: auto;
+    margin-right: auto;
+    .profile-img {
+      border-radius: 50%;
+    }
+  }
+  .cover-img-container {
+    position: relative;
+    .bkg-img {
+      height: 400px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-color: lightgray;
+    }
+    .drop-zone-styles {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      button {
+        background-color: lightcoral;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.right-container {
+  width: 60%;
+  display: inline-block;
+  background-color: pink;
+  vertical-align: top;
+  .calendar-container {
+    height: 500px;
+  }
+}
+
+.job-buttons {
+  button {
+    background: transparent;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  }
+}
